@@ -1,9 +1,10 @@
 import React from 'react'
+import router from '../assets/router.png'
 
 const NavBar = () => {
   return (
     <div>
-        <img src="" alt=""/>
+        <img src={router} alt=""/>
         <ul>
             <li>Home</li>
             <li>Products</li>
