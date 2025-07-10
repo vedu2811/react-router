@@ -3,8 +3,8 @@ import router from '../assets/router.png'
 
 const NavBar = () => {
   return (
-    <div>
-        <img src={router} alt=""/>
+    <div className='navbar'>
+        <img src={router} alt="" className='img'/>
         <ul>
             <li>Home</li>
             <li>Products</li>
