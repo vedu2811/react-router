@@ -1,0 +1,34 @@
+{
+    "jobs":[
+        {
+            "id":1,
+            "title":"abc",
+            "salary":50000,
+            "location": "x"
+        },
+        {
+            "id":2,
+            "title":"def",
+            "salary":40000,
+            "location":"y"
+        },
+        {
+            "id":3,
+            "title":"ghi",
+            "salary":60000,
+            "location":"z"
+        },
+        {
+            "id":4,
+            "title":"jkl",
+            "salary":70000,
+            "location":"v"
+        },
+        {
+            "id":5,
+            "title":"mno",
+            "salary":45000,
+            "location":"w"
+        }
+    ]
+}
