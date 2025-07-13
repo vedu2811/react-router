@@ -3,10 +3,12 @@ import NavBar from './component/NavBar'
 import Home from './pages/Home'
 import Product from './pages/Product'
 import About from './pages/About'
-import Contact from './pages/Contact'
+// import Contact from './pages/Contact'
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom'
 import RootLayout from './layout/RootLayout'
 import ContactLayout from './layout/ContactLayout'
+import ContactInfo from './component/ContactInfo'
+import ContactForm from './component/ContactForm'
 
 
 const App = () => {
@@ -18,12 +20,12 @@ const App = () => {
         <Route path='products' element={<Product />}/>
         <Route path='about' element={<About />}/>
         <Route path='contact' element={<ContactLayout />}>
-        
+          <Route path='info' element={<ContactInfo />} />
+          <Route path='form' element={<ContactForm />} />
         </Route>
       </Route>
     )
   )
-
   return (
     <RouterProvider router={router}/>
   )
