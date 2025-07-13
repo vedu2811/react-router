@@ -6,6 +6,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom'
 import RootLayout from './layout/RootLayout'
+import ContactLayout from './layout/ContactLayout'
 
 
 const App = () => {
@@ -16,7 +17,9 @@ const App = () => {
         <Route index element={<Home />}/>
         <Route path='products' element={<Product />}/>
         <Route path='about' element={<About />}/>
-        <Route path='contact' element={<Contact />}/>
+        <Route path='contact' element={<ContactLayout />}>
+        
+        </Route>
       </Route>
     )
   )
