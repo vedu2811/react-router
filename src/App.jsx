@@ -9,6 +9,7 @@ import RootLayout from './layout/RootLayout'
 import ContactLayout from './layout/ContactLayout'
 import ContactInfo from './component/ContactInfo'
 import ContactForm from './component/ContactForm'
+import NotFound from './component/NotFound'
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
           <Route path='info' element={<ContactInfo />} />
           <Route path='form' element={<ContactForm />} />
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Route>
     )
   )
