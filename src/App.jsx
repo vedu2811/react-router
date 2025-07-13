@@ -10,6 +10,8 @@ import ContactLayout from './layout/ContactLayout'
 import ContactInfo from './component/ContactInfo'
 import ContactForm from './component/ContactForm'
 import NotFound from './component/NotFound'
+import JobsLayout from './layout/JobsLayout'
+import Jobs from './pages/Jobs'
 
 
 const App = () => {
@@ -23,6 +25,9 @@ const App = () => {
         <Route path='contact' element={<ContactLayout />}>
           <Route path='info' element={<ContactInfo />} />
           <Route path='form' element={<ContactForm />} />
+        </Route>
+        <Route path='jobs' element={<JobsLayout />}>
+          <Route index element={<Jobs />} />
         </Route>
         <Route path="*" element={<NotFound />} />
       </Route>
